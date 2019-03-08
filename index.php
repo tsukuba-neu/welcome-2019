@@ -7,17 +7,13 @@ add_action( 'wp_enqueue_scripts', function() {
 get_header();
 
 ?>
+
 <ul class="post-list">
 <?php
 if( have_posts() ) {
   while( have_posts() ) {
     the_post();
-?>
-<li id="post-<?php the_ID() ?>" <?php post_class() ?>>
-  <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
-  <?php the_post_thumbnail( 'medium' ); ?>
-</li>
-<?php
+    include( 'components/post-list-item.php' );
   }
 }
 ?>
