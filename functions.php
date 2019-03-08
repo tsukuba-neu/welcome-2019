@@ -9,4 +9,11 @@ add_action( 'wp_enqueue_scripts', function() {
   null, null, true);
 
 });
+
+add_action( 'wp_enqueue_scripts', function() {
+
+  wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Noto+Sans+JP' );
+
+} );
+
 ?>
