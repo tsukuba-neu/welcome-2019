@@ -16,9 +16,9 @@ get_header();
 
 
 
-<section class="category category--events">
+<section class="category category--welcome">
   <h2 class="category__title"
-      style="background-image: url(<?php echo $dir . '/assets/img/menu-icon--event-color.svg' ?>)"
+      style="background-image: url(<?php echo $dir . '/assets/img/menu-icon--welcome-color.svg' ?>)"
   >新歓情報</h2>
 <?php
 
@@ -26,7 +26,7 @@ $posts = get_posts( array(
   'posts_per_page' => 4,
   'orderby' => 'date',
   'order' => 'DESC',
-  'category_name' => 'events',
+  'category_name' => 'welcome',
 ) );
 
 if( $posts ): ?>

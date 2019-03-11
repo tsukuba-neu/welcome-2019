@@ -26,7 +26,7 @@
       <nav class="site-header__menu flex-fix">
         <a href="/welcome"
            class="site-header__menu-item"
-           style="background-image: url('<?php echo $dir . '/assets/img/menu-icon--event-color.svg' ?>')"
+           style="background-image: url('<?php echo $dir . '/assets/img/menu-icon--welcome-color.svg' ?>')"
         >新歓情報</a>
         <a href="/about"
            class="site-header__menu-item"
