@@ -12,9 +12,9 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <header class="site-header">
-      <h1>
-        <a href="<?php esc_url( home_url( '/' ) ); ?>">
+    <header class="site-header flex">
+      <h1 class="flex-fix">
+        <a href="/">
           <img
             class="site-header__logo"
             src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/header-logo.svg"
@@ -23,4 +23,19 @@
           >
         </a>
       </h1>
+      <nav class="site-header__menu flex-fix">
+        <a href="/welcome"
+           class="site-header__menu-item"
+           style="background-image: url('<?php echo $dir . '/assets/img/menu-icon--event-color.svg' ?>')"
+        >新歓情報</a>
+        <a href="/about"
+           class="site-header__menu-item"
+           style="background-image: url('<?php echo $dir . '/assets/img/menu-icon--about-color.svg' ?>')"
+        >劇団について</a>
+        <a href="/culture"
+           class="site-header__menu-item"
+           style="background-image: url('<?php echo $dir . '/assets/img/menu-icon--culture-color.svg' ?>')"
+        >人形劇の文化</a>
+      </nav>
+      <div class="spacer flex-stretcj"></div>
     </header>

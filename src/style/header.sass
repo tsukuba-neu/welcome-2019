@@ -1,5 +1,5 @@
 
-$height: 120px
+$height: 200px
 
 .site-header
   width: 100%
@@ -9,5 +9,26 @@ $height: 120px
     margin: 0
 
   .site-header__logo
-    height: 70px
-    margin: ($height - 70px)/2 25px
+    $item-height: 80px
+
+    height: $item-height
+    margin: ($height - $item-height)/2 25px
+
+
+.site-header__menu
+  .site-header__menu-item
+    $item-height: 70px
+
+    display: inline-block
+    height: $item-height
+    margin: ($height - $item-height)/2 25px
+
+    line-height: 160px
+    font-weight: bold
+    font-size: 13px
+    letter-spacing: .2em
+
+    color: #000
+    background-position: top center
+    background-size: 50px
+    background-repeat: no-repeat
