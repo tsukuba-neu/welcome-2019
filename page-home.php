@@ -1,5 +1,7 @@
 <?php
 
+$dir = get_template_directory_uri();
+
 add_action( 'wp_enqueue_scripts', function() {
   wp_enqueue_script( 'index', get_template_directory_uri() . '/dist/app/page-home.js', null, null, true );
 });
@@ -15,7 +17,9 @@ get_header();
 
 
 <section class="category category--events">
-  <h2 class="category__title">新歓情報</h2>
+  <h2 class="category__title"
+      style="background-image: url(<?php echo $dir . '/assets/img/menu-icon--event-color.svg' ?>)"
+  >新歓情報</h2>
 <?php
 
 $posts = get_posts( array(
@@ -41,7 +45,10 @@ if( $posts ): ?>
 
 
 <section class="category category--about">
-  <h2 class="category__title">人形劇団NEUについて</h2>
+  <h2 class="category__title"
+      style="background-image: url(<?php echo $dir . '/assets/img/menu-icon--about-color.svg' ?>)"
+  >人形劇団NEUについて</h2>
+
 <?php
 
 $posts = get_posts( array(
@@ -67,7 +74,9 @@ if( $posts ): ?>
 
 
 <section class="category category--culture">
-  <h2 class="category__title">もっと知りたい！人形劇の文化</h2>
+  <h2 class="category__title"
+      style="background-image: url(<?php echo $dir . '/assets/img/menu-icon--culture-color.svg' ?>)"
+  >もっと知りたい！人形劇の文化</h2>
 <?php
 
 $posts = get_posts( array(
