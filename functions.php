@@ -13,7 +13,7 @@ add_action( 'wp_enqueue_scripts', function() {
 
 add_action( 'wp_enqueue_scripts', function() {
 
-  wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Noto+Sans+JP' );
+  wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700' );
 
 } );
 
