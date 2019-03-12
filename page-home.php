@@ -26,7 +26,7 @@ $posts = get_posts( array(
   'posts_per_page' => 4,
   'orderby' => 'date',
   'order' => 'DESC',
-  'category_name' => 'welcome',
+  'category_name' => 'welcome19',
 ) );
 
 if( $posts ): ?>

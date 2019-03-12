@@ -24,7 +24,7 @@
         </a>
       </h1>
       <nav class="site-header__menu">
-        <a href="/welcome"
+        <a href="/welcome19"
            class="site-header__menu-item"
            style="background-image: url('<?php echo $dir . '/assets/img/menu-icon--welcome-color.svg' ?>')"
         >新歓情報</a>
