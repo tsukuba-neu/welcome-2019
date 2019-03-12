@@ -1,0 +1,81 @@
+
+@import './media'
+
+.site-footer
+  padding: 0.1px
+
+  font-weight: normal
+  font-size: 11px
+  line-height: 2em
+
+  color: #ddd
+  background-color: #222
+
+  .site-footer__wrap
+    margin: 30px auto
+
+    +rmq(md)
+      display: block
+
+      .info, .contacts
+        margin: 0 30px
+        text-align: center
+
+    p
+      margin: 0
+
+    a
+      display: inline-block
+      color: #ddd
+      border-bottom: dashed 1px #ddd
+
+    .alien
+      width: 84px
+      height: 84px
+      margin-right: 20px
+      background-size: 75px
+      background-position: center
+      background-repeat: no-repeat
+
+      +rmq(md)
+        margin: 10px auto
+
+    .info
+
+      .name
+        display: inline-block
+        padding-bottom: 7px
+        font-size: 14px
+
+      .address
+        font-style: normal
+
+    .contacts
+      display: flex
+
+      &::before
+        content: ''
+        flex: 0 0 auto
+
+        display: block
+        width: 1px
+        height: 100%
+        margin: 0 50px
+        background-color: #ddd
+
+        float: left
+
+        +rmq(md)
+          display: none
+
+      .contacts-list
+        flex: 1 1 auto
+        display: block
+        margin: 30px 20px
+        padding: 0
+        list-style-type: none
+
+        li
+          display: inline-block
+          margin: 0 10px
+          font-size: 14px
