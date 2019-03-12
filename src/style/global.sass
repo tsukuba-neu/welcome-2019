@@ -1,5 +1,6 @@
 
-@import 'header.sass'
+@import './header'
+@import './media'
 
 *
   font-family: 'Noto Sans JP', sans-serif
@@ -7,8 +8,13 @@
 
 html, body
   width: 100%
+  min-width: 1000px
   height: 100%
   margin: 0
+  overflow-x: auto
+
+  +rmq(md)
+    min-width: 320px
 
 figure
   margin: 0
@@ -26,4 +32,3 @@ a
 
 .flex-stretch
   flex: 1 1 auto
-  

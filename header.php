@@ -12,18 +12,18 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <header class="site-header flex">
-      <h1 class="flex-fix">
+    <header class="site-header">
+      <h1 class="site-header__title">
         <a href="/">
           <img
-            class="site-header__logo"
+            class="site-header__title-logo"
             src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/header-logo.svg"
             height="70"
             alt="筑波大学 人形劇団NEU"
           >
         </a>
       </h1>
-      <nav class="site-header__menu flex-fix">
+      <nav class="site-header__menu">
         <a href="/welcome"
            class="site-header__menu-item"
            style="background-image: url('<?php echo $dir . '/assets/img/menu-icon--welcome-color.svg' ?>')"
@@ -37,5 +37,5 @@
            style="background-image: url('<?php echo $dir . '/assets/img/menu-icon--culture-color.svg' ?>')"
         >人形劇の文化</a>
       </nav>
-      <div class="spacer flex-stretcj"></div>
+      <div class="site-header__spacer"></div>
     </header>
