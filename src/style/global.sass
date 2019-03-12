@@ -1,0 +1,38 @@
+
+@import './header'
+@import './footer'
+@import './media'
+
+*
+  font-family: 'Noto Sans JP', sans-serif
+  letter-spacing: .1em
+
+html, body
+  width: 100%
+  min-width: 1000px
+  height: 100%
+  margin: 0
+  overflow-x: auto
+
+  +rmq(md)
+    min-width: 320px
+
+.main
+  min-height: calc( 100vh - 400px )
+
+figure
+  margin: 0
+
+a
+  text-decoration: none
+  color: #444
+
+// FlexBox
+.flex
+  display: flex
+
+.flex-fix
+  flex: 0 0 auto
+
+.flex-stretch
+  flex: 1 1 auto

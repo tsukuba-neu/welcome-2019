@@ -1,0 +1,67 @@
+
+@import './media'
+
+$height: 200px
+
+.site-header
+  display: flex
+  width: 100%
+
+  +rmq(md)
+    flex-direction: column
+    margin: 20px 0
+
+  .site-header__title
+    flex: 0 0 auto
+    margin: 0
+
+    text-align: center
+
+    .site-header__title-logo
+      $item-height: 80px
+
+      display: inline-block
+      height: $item-height
+      margin: ($height - $item-height)/2 25px
+
+      +rmq(md)
+        height: 60px
+        margin: 15px auto
+
+
+  .site-header__menu
+    flex: 0 0 auto
+
+    +rmq(md)
+      display: grid
+      margin: auto 15px
+      grid-template-columns: 1fr 1fr 1fr
+
+    .site-header__menu-item
+      $item-height: 90px
+
+      display: inline-block
+      height: $item-height
+      margin: ($height - $item-height)/2 25px
+
+      line-height: 160px
+      font-weight: bold
+      font-size: 13px
+      letter-spacing: .2em
+
+      color: #000
+      background-position: top center
+      background-size: auto 50px
+      background-repeat: no-repeat
+
+      +rmq(md)
+        margin: 15px auto
+        background-size: auto 45px
+        font-size: 12px
+        line-height: 140px
+
+  .site-header__spacer
+    flex: 1 1 auto
+
+    +rmq(md)
+      display: none
