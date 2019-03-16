@@ -23,7 +23,7 @@ get_header();
 <?php
 
 $posts = get_posts( array(
-  'posts_per_page' => 4,
+  'posts_per_page' => 3,
   'orderby' => 'date',
   'order' => 'DESC',
   'category_name' => 'welcome19',
@@ -52,7 +52,7 @@ if( $posts ): ?>
 <?php
 
 $posts = get_posts( array(
-  'posts_per_page' => 4,
+  'posts_per_page' => 3,
   'orderby' => 'date',
   'order' => 'DESC',
   'category_name' => 'about',
@@ -80,7 +80,7 @@ if( $posts ): ?>
 <?php
 
 $posts = get_posts( array(
-  'posts_per_page' => 4,
+  'posts_per_page' => 3,
   'orderby' => 'date',
   'order' => 'DESC',
   'category_name' => 'culture',
