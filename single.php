@@ -18,7 +18,7 @@ if( have_posts() ) {
     the_post();
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class="main-content" <?php post_class(); ?>>
   <h1 class="post__title"><?php the_title() ?></h1>
   <figure class="post__thumbnail">
     <?php the_post_thumbnail(); ?>

@@ -1,4 +1,4 @@
-<li id="post-<?php the_ID() ?>" <?php post_class() ?>>
+<li id="post-<?php the_ID() ?>" class="post-list__item" <?php post_class() ?>>
   <a href="<?php the_permalink() ?>">
     <figure>
       <span class="thumbnail">
