@@ -1,32 +1,31 @@
 
 @import './media'
 
-$max-width: 900px
+$max-width: 800px
 
 .post
-  .centered
-    width: calc( 100vw - 40px * 2 )
-    max-width: $max-width
-    margin-left: auto
-    margin-right: auto
+  width: calc( 100vw - 40px * 2 )
+  max-width: $max-width
+  margin: auto
 
-    +rmq(md)
-      width: calc( 100vw - 20px * 2 )
+  +rmq(md)
+    width: calc( 100vw - 20px * 2 )
 
   .post__title
-    @extend .centered
     margin-top: 100px
     margin-bottom: 100px
 
     font-weight: normal
     font-size: 30px
+    line-height: 1.8em
 
     +rmq(md)
-      margin-top: 70px
-      margin-bottom: 70px
+      margin-top: 50px
+      margin-bottom: 50px
+
+      font-size: 23px
 
   .post__thumbnail
-    @extend .centered
     margin-top: 40px
     margin-bottom: 40px
     background-color: #eee
@@ -36,28 +35,26 @@ $max-width: 900px
       height: auto
 
   .post__content
-    font-size: 14px
+    font-size: 13px
     line-height: 2em
 
     p
-      @extend .centered
-      margin-bottom: 1em
+      margin-bottom: .5em
 
     h2, h3, h4
       font-weight: normal
 
     h2
-      @extend .centered
       margin-top: 70px
       margin-bottom: 40px
+      padding-bottom: 20px
+      border-bottom: 1px dashed #000
       font-size: 20px
 
     .wp-block-image
-      @extend .centered
-      margin-top: 40px
-      margin-bottom: 40px
+      margin-top: 60px
+      margin-bottom: 60px
 
       img
         width: 100%
-        max-height: 70vh
         object-fit: cover
