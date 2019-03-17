@@ -1,5 +1,6 @@
 
 @import './media'
+@import './components/post-list'
 
 $max-width: 800px
 
@@ -58,3 +59,22 @@ $max-width: 800px
       img
         width: 100%
         object-fit: cover
+
+.relateds
+  margin-top: 100px
+  padding: .1px 0
+  background-color: #eee
+
+  .relateds__title
+    margin: 70px
+    font-weight: bold
+    font-size: 15px
+    letter-spacing: .2em
+    text-align: center
+    color: rgba( 0, 0, 0, .9 )
+
+  .post-list
+    width: calc( 100vw - 40px * 2 )
+    max-width: 1000px
+    margin-left: auto
+    margin-right: auto

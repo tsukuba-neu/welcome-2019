@@ -33,6 +33,42 @@ if( have_posts() ) {
   }
 }
 
+
+if( has_category() ) {
+  $cats = get_the_category();
+  $catkwds = array();
+  foreach($cats as $cat) {
+      $catkwds[] = $cat->term_id;
+  }
+}
+
+$related_posts = get_posts( array(
+  'post_type' => 'post',
+  'posts_per_page' => '3',
+  'post__not_in' => array( $post->ID ),
+  'category__in' => $catkwds,
+  'orderby' => 'rand'
+) );
+
+if( $related_posts ) {
 ?>
 
-<?php get_footer(); ?>
+<section class="relateds">
+  <h2 class="relateds__title">こんな記事もあります</h2>
+  <ul class="post-list">
+    <?php
+    foreach($related_posts as $post):
+      setup_postdata($post);
+      include( 'components/post-list-item.php' );
+    endforeach
+    ?>
+  </ul>
+</section>
+
+<?php
+
+}
+
+get_footer();
+
+?>
